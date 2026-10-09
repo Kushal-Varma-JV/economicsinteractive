@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tier 2 · 4 mark questions · II PUC Economics</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#1d2330;--mu:#5b6475;--ln:#e3e6ec;--ac:#2563eb;--acs:#e8efff;--r1:#dc2626;--r2:#ea7a0c;--r3:#d4a20a;--ok:#15803d;--warn:#b45309;--c1:#2563eb;--c2:#dc2626;--c3:#15803d;--c4:#9333ea}
+@media(prefers-color-scheme:dark){:root{--bg:#12151b;--card:#1b2029;--tx:#e6e9ef;--mu:#9aa3b2;--ln:#2c3340;--ac:#7aa2ff;--acs:#1f2a44;--c1:#7aa2ff;--c2:#ff7b7b;--c3:#5fd38a;--c4:#c39bff}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:0 12px 60px}
+header.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--ln)}
+.tabs{display:flex;gap:6px;padding:8px 12px 6px;max-width:780px;margin:0 auto}
+.tabs a{flex:1;text-align:center;padding:7px 4px;border-radius:10px;text-decoration:none;color:var(--tx);background:var(--card);border:1px solid var(--ln);font-size:14px;font-weight:600;line-height:1.2}
+.tabs a small{display:block;color:var(--mu);font-size:11px;font-weight:400}
+.tabs a.on{background:var(--ac);color:#fff;border-color:var(--ac)}.tabs a.on small{color:#e6edff}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:0 12px 8px;max-width:780px;margin:0 auto;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{white-space:nowrap;font-size:13px;padding:4px 10px;border-radius:99px;background:var(--acs);color:var(--ac);text-decoration:none}
+h1{font-size:21px;margin:16px 0 4px}.intro{color:var(--mu);font-size:14px;margin:0 0 6px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;font-size:13px;color:var(--mu)}
+.bar button{font:inherit;padding:6px 12px;border-radius:8px;border:1px solid var(--ln);background:var(--card);color:var(--tx);cursor:pointer}
+.lg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin:0 4px 0 8px;vertical-align:-1px}
+.d1{background:var(--r1)}.d2{background:var(--r2)}.d3{background:var(--r3)}
+section{scroll-margin-top:100px;counter-reset:q;margin-top:24px}
+h2{font-size:17px;margin:0 0 8px;padding-left:10px;border-left:4px solid var(--ac);line-height:1.3}
+h2 small{display:block;color:var(--mu);font-weight:400;font-size:13px}
+.q{background:var(--card);border:1px solid var(--ln);border-left:5px solid var(--r3);border-radius:12px;margin:0 0 10px;counter-increment:q}
+.q.p1{border-left-color:var(--r1)}.q.p2{border-left-color:var(--r2)}
+summary{list-style:none;cursor:pointer;padding:12px 40px 10px 14px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:16px;top:18px;width:8px;height:8px;border-right:2px solid var(--mu);border-bottom:2px solid var(--mu);transform:rotate(45deg);transition:.2s}
+.q[open]>summary::after{transform:rotate(225deg);top:22px}
+.qt{display:block;font-weight:600}.qt::before{content:counter(q)". ";color:var(--mu)}
+.opt{display:block;font-size:14px;color:var(--mu);margin-top:4px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:6px;font-size:12px;color:var(--mu)}
+.mk{background:var(--acs);color:var(--ac);padding:1px 7px;border-radius:6px;font-weight:700}
+.ans{padding:2px 14px 14px;border-top:1px dashed var(--ln)}
+.ans p,.ans li{margin:.45em 0}.ans ul,.ans ol{padding-left:20px}
+.ans h4{font-size:15px;margin:18px 0 4px}
+.lbl{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:2px 7px;border-radius:5px;margin-top:12px}
+.key{background:#dcfce7;color:#166534}.txt{background:#e0e7ff;color:#3730a3}
+@media(prefers-color-scheme:dark){.key{background:#14361f;color:#86efac}.txt{background:#262b55;color:#c7d2fe}}
+.also{font-size:13px;color:var(--mu);background:var(--bg);border-radius:8px;padding:6px 10px;margin-top:10px}
+.warn{font-size:13px;border-left:3px solid var(--warn);padding:4px 10px;background:var(--bg)}
+.tip{font-size:14px;border-left:3px solid var(--ok);padding:4px 10px;background:var(--bg)}
+.tw{overflow-x:auto;margin:8px 0}
+table{border-collapse:collapse;font-size:14px;min-width:100%}
+th,td{border:1px solid var(--ln);padding:5px 8px;text-align:left;vertical-align:top}th{background:var(--bg)}
+figure{margin:12px 0;text-align:center}figure svg{width:100%;max-width:420px;height:auto}
+figcaption{font-size:12px;color:var(--mu);margin-top:2px}
+svg text{fill:currentColor;font-size:12px;font-family:inherit}
+svg circle{fill:currentColor}
+.ax{stroke:currentColor;stroke-width:1.5;fill:none}.cv{fill:none;stroke-width:2.2;stroke-linejoin:round}
+.b1{stroke:var(--c1)}.b2{stroke:var(--c2)}.b3{stroke:var(--c3)}.b4{stroke:var(--c4)}
+.f1{fill:var(--c1)}.f2{fill:var(--c2)}
+.dl{stroke:var(--mu);stroke-dasharray:4 3;stroke-width:1;fill:none}
+.gp{stroke:var(--c4);stroke-width:3.5;fill:none;stroke-linecap:round}
+.ar{stroke:var(--mu);stroke-width:1.5;fill:none;marker-end:url(#ah)}.mf{fill:var(--mu)}
+.empty{color:var(--mu);font-size:14px;background:var(--card);border:1px dashed var(--ln);border-radius:12px;padding:10px 14px}
+.next{display:block;text-align:center;margin:28px 0 0;padding:12px;border-radius:12px;background:var(--ac);color:#fff;text-decoration:none;font-weight:600}
+.fx{background:var(--bg);border-radius:12px;padding:8px}
+.fx [data-s].off{display:none}
+.say{font-size:14px;text-align:left;background:var(--card);border:1px solid var(--ln);border-radius:8px;padding:8px 10px;margin:6px 0;min-height:3em}
+.ctl{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:6px 0}
+.ctl button{font:inherit;font-size:13px;padding:7px 11px;border-radius:8px;border:1px solid var(--ln);background:var(--card);color:var(--tx);cursor:pointer}
+.quiz text.q{fill:var(--c2);font-weight:700;font-size:15px;cursor:pointer}
+.hint{font-size:13px;color:var(--mu);margin:8px 0 2px}
+td.h{background:var(--acs);color:transparent;cursor:pointer;user-select:none;-webkit-user-select:none}
+td.h.r{background:transparent;color:inherit}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="mf"/></marker></defs></svg>
+<header class="top">
+<nav class="tabs"><a href="index.html">Tier 1<small>5–6 marks</small></a><a class="on" href="2.html">Tier 2<small>4 marks</small></a><a href="3.html">Tier 3<small>1–2 marks</small></a></nav>
+<nav class="chips"><a href="#c3">Ch 3 Production &amp; Costs</a><a href="#c4">Ch 4 Firm</a><a href="#c5">Ch 5 Equilibrium</a><a href="#c2">Ch 2 Consumer</a><a href="#c1">Ch 1 Intro</a><a href="#m1">Macro Ch 1</a></nav>
+</header>
+<main class="wrap">
+<h1>Tier 2 · 4-mark questions</h1>
+<p class="intro">Mid-length questions that keep coming back. Tap a question to see its answer.</p>
+<p class="intro">On diagrams, tap <b>Next step</b> to draw them one piece at a time, in the same order you would draw them in the exam. Tap <b>Test me</b> to hide the labels, then tap each <b>?</b> to check yourself. In tables, the blue boxes are hidden answers: work them out, then tap to check.</p>
+<div class="bar"><button onclick="setAll(true)">Expand all</button><button onclick="setAll(false)">Collapse all</button><span class="lg">Asked:<i class="d1"></i>4+ times<i class="d2"></i>3 times<i class="d3"></i>2 times</span></div>
+
+<section id="c3"><h2>Micro Ch 3 · Production and Costs</h2><p class="empty">No 4-mark questions from this chapter keep coming back. See Tier 1 (6 marks) and Tier 3 (1–2 marks).</p></section>
+
+<!-- ============ CH 4 ============ -->
+<section id="c4">
+<h2>Micro Ch 4 · Theory of the Firm under Perfect Competition</h2>
+
+<details class="q p2" id="T2-C4-01"><summary><span class="qt">Explain the determinants of a firm's supply curve.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> the supply curve is part of the MC curve, so whatever moves MC moves supply. Cheaper to produce → supply shifts <b>right</b>. Costlier to produce → supply shifts <b>left</b>.</p>
+<h4>Exam answer</h4>
+<p>A firm's supply curve is the rising part of its marginal cost (MC) curve, from the minimum point of AVC upwards. So anything that changes the MC curve also shifts the supply curve. There are two such factors:</p>
+<p><b>a) Technological progress:</b> with new technology or a better way of organising work, the same labour and capital produce more output. So the firm needs fewer inputs for each unit, and its MC falls (the MC curve shifts down, to the right). <b>The supply curve shifts to the right:</b> at every price, the firm supplies more.</p>
+<p><b>b) Input prices:</b> if the price of an input rises (for example, the wage rate of labour), the cost of production rises. Average cost and MC both rise (the MC curve shifts up, to the left). <b>The supply curve shifts to the left:</b> at every price, the firm supplies less. If input prices fall, the supply curve shifts right.</p>
+<p><b>Extra point, unit tax:</b> a tax of Rs t on each unit sold raises AC and MC by Rs t at every output, so it also shifts the supply curve to the left.</p>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 310 225" role="img" aria-label="Shifts of the supply curve">
+<g data-s="1"><path class="ax" d="M40 10V200H300"/><text x="4" y="12">Price</text><text x="300" y="222" text-anchor="end">Output</text>
+<path class="cv b1" d="M80 190L230 40"/><text class="k" x="226" y="36">S0</text>
+<path class="dl" d="M40 120H150V200"/><text x="34" y="124" text-anchor="end">p</text><text x="150" y="214" text-anchor="middle">q0</text></g>
+<g data-s="2"><path class="cv b3" d="M130 190L280 40"/><text class="k" x="276" y="36">S1</text><path class="ar" d="M204 70H244"/><path class="dl" d="M150 120H200V200"/><text x="200" y="214" text-anchor="middle">q1</text></g>
+<g data-s="3"><path class="cv b2" d="M40 190L190 40"/><text class="k" x="176" y="36">S2</text><path class="ar" d="M96 170H66"/><path class="dl" d="M110 120V200"/><text x="110" y="214" text-anchor="middle">q2</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes (price going up, output going across) and the firm's supply curve <b>S0</b>. At price p, the firm supplies q0.</li>
+<li><b>Technological progress:</b> MC falls, so the supply curve shifts right to <b>S1</b>. At the same price p, the firm now supplies more (q1).</li>
+<li><b>Input prices rise (or a unit tax):</b> MC rises, so the supply curve shifts left to <b>S2</b>. At the same price p, the firm now supplies less (q2).</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C4-02"><summary><span class="qt">Write about Shut down point, Normal profit and Break-even point.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> <b>Shut down point</b> = lowest point of AVC. <b>Break-even point</b> = lowest point of AC. <b>Normal profit</b> = just enough profit to stay in business.</p>
+<h4>Exam answer</h4>
+<p><b>1. Shut down point:</b> in the short run, a firm keeps producing as long as the price is at least equal to the minimum AVC. So the lowest point of the AVC curve, where the SMC curve cuts it, is the last price–output combination at which the firm produces. Below this price, it produces nothing. This is the <b>short run shut down point</b>. In the long run, the shut down point is the minimum point of the LRAC curve.</p>
+<p><b>2. Normal profit:</b> the minimum profit a firm needs to stay in its existing business. A firm that does not earn it will leave the business. So normal profit is counted as part of the firm's total cost. It can be thought of as the opportunity cost of entrepreneurship. Any profit above normal profit is called <b>super-normal profit</b>.</p>
+<p><b>3. Break-even point:</b> the point on the supply curve where the firm earns only normal profit (no super-normal profit and no loss). It is the minimum point of the average cost curve, where the supply (MC) curve cuts it: the SAC curve in the short run, and the LRAC curve in the long run. Here price = AC, so TR = TC.</p>
+<div class="tw"><table><tr><th>Point</th><th>Where it is</th><th>What it means</th></tr>
+<tr><td>Shut down point</td><td>Minimum AVC (short run), minimum LRAC (long run)</td><td>Below this price, the firm produces nothing</td></tr>
+<tr><td>Break-even point</td><td>Minimum SAC (short run), minimum LRAC (long run)</td><td>The firm earns only normal profit</td></tr></table></div>
+<h4>Diagram (short run)</h4>
+<figure class="fx"><svg viewBox="0 0 330 230" role="img" aria-label="Shut down point and break-even point">
+<g data-s="1"><path class="ax" d="M40 10V200H320"/><text x="4" y="14">Cost</text><text x="320" y="218" text-anchor="end">Output</text><text x="30" y="214">O</text></g>
+<g data-s="2"><path class="cv b3" d="M60 70Q160 195 260 70"/><text class="k" x="264" y="74">AVC</text><path class="dl" d="M160 132.5V200"/><circle cx="160" cy="132.5" r="3.5"/><text class="k" x="166" y="150">P</text><text x="160" y="214" text-anchor="middle">q1</text></g>
+<g data-s="3"><path class="cv b1" d="M60 20Q195 175 290 30"/><text class="k" x="294" y="34">SAC</text><path class="dl" d="M188.8 100.1V200"/><circle cx="188.8" cy="100.1" r="3.5"/><text class="k" x="194" y="116">S</text><text x="191" y="214" text-anchor="middle">q2</text></g>
+<g data-s="4"><path class="cv b2" d="M70 105Q110 172.5 160 132.5Q185 112.5 225 43"/><text class="k" x="228" y="40">SMC</text><path class="gp" d="M160 132.5Q185 112.5 225 43"/><text x="190" y="80" text-anchor="end" font-size="10">Supply</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes: cost going up, output going across.</li>
+<li>Draw <b>AVC</b> as a U. Its lowest point <b>P</b> is the <b>shut down point</b>. Below this price, the firm stops producing.</li>
+<li>Draw <b>SAC</b> as a wider U above AVC. Its lowest point <b>S</b> is the <b>break-even point</b>. Here price = AC, so the firm earns only normal profit.</li>
+<li>Draw <b>SMC</b>. It passes through P and S. The thick part of SMC above P is the firm's <b>supply curve</b>.</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C4-03"><summary><span class="qt">Assume that 200 balls are produced by the firm at the market price Rs. 15 for each ball. When the price of the ball rises to Rs. 25, the firm produces 500 balls. Find the elasticity of supply.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> e<sub>s</sub> = % change in quantity supplied ÷ % change in price. Always work out the % changes from the <b>old (first)</b> values.</p>
+<h4>Exam answer</h4>
+<p><b>Given:</b> old price P1 = Rs 15, new price P2 = Rs 25. Old quantity Q1 = 200, new quantity Q2 = 500.</p>
+<p><b>Formula:</b> e<sub>s</sub> = Percentage change in quantity supplied ÷ Percentage change in price</p>
+<div class="prac"><p class="hint">Work out each blue box, then tap it to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Step</th><th>Working</th><th>Answer</th></tr>
+<tr><td>Change in quantity (ΔQ)</td><td>500 − 200</td><td class="h">300</td></tr>
+<tr><td>% change in quantity</td><td>(300 ÷ 200) × 100</td><td class="h">150</td></tr>
+<tr><td>Change in price (ΔP)</td><td>25 − 15</td><td class="h">10</td></tr>
+<tr><td>% change in price</td><td>(10 ÷ 15) × 100</td><td class="h">66.67</td></tr>
+<tr><td>e<sub>s</sub></td><td>150 ÷ 66.67</td><td class="h">2.25</td></tr></table></div></div>
+<p><b>Short method:</b> e<sub>s</sub> = (ΔQ ÷ ΔP) × (P ÷ Q) = (300 ÷ 10) × (15 ÷ 200) = 30 × 0.075 = <b>2.25</b></p>
+<p><b>Meaning:</b> e<sub>s</sub> = 2.25 is more than 1, so supply is <b>elastic</b>. A 1% rise in price raises quantity supplied by 2.25%.</p>
+<p class="tip">e<sub>s</sub> &gt; 1: elastic. e<sub>s</sub> = 1: unitary elastic. e<sub>s</sub> &lt; 1: inelastic. A vertical supply curve has e<sub>s</sub> = 0.</p>
+</div></details>
+</section>
+
+<!-- ============ CH 5 ============ -->
+<section id="c5">
+<h2>Micro Ch 5 · Market Equilibrium</h2>
+
+<details class="q p2" id="T2-C5-01"><summary><span class="qt">Write a table to show the impact of simultaneous shifts in demand and supply on equilibrium.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> both curves shift the <b>same</b> way → <b>quantity</b> is certain, price depends. They shift <b>opposite</b> ways → <b>price</b> is certain, quantity depends. "Depends" means it may increase, decrease or stay the same, depending on which curve shifts more.</p>
+<h4>Exam answer</h4>
+<div class="prac"><p class="hint">Say what happens to quantity and price in each row, then tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Shift in demand</th><th>Shift in supply</th><th>Quantity</th><th>Price</th></tr>
+<tr><td>Leftward</td><td>Leftward</td><td class="h">Decreases</td><td class="h">May increase, decrease or remain unchanged</td></tr>
+<tr><td>Rightward</td><td>Rightward</td><td class="h">Increases</td><td class="h">May increase, decrease or remain unchanged</td></tr>
+<tr><td>Leftward</td><td>Rightward</td><td class="h">May increase, decrease or remain unchanged</td><td class="h">Decreases</td></tr>
+<tr><td>Rightward</td><td>Leftward</td><td class="h">May increase, decrease or remain unchanged</td><td class="h">Increases</td></tr></table></div></div>
+<ul><li>When both curves shift in the <b>same direction</b>, both push quantity the same way, so the effect on quantity is certain. But one pushes price up and the other pushes it down, so the effect on price depends on which shift is bigger.</li>
+<li>When they shift in <b>opposite directions</b>, both push price the same way, so the effect on price is certain. The effect on quantity depends on which shift is bigger.</li></ul>
+<h4>Example diagram · both curves shift right by the same amount</h4>
+<figure class="fx"><svg viewBox="0 0 330 225" role="img" aria-label="Both demand and supply shift right">
+<g data-s="1"><path class="ax" d="M40 10V200H320"/><text x="4" y="12">Price</text><text x="320" y="222" text-anchor="end">Quantity</text>
+<path class="cv b1" d="M60 40L240 190"/><path class="cv b3" d="M60 190L240 40"/><text class="k" x="244" y="192">DD0</text><text class="k" x="244" y="40">SS0</text>
+<path class="dl" d="M40 115H150V200"/><circle cx="150" cy="115" r="3.5"/><text class="k" x="150" y="105" text-anchor="middle">E</text><text x="34" y="119" text-anchor="end">p0</text><text x="150" y="214" text-anchor="middle">q0</text></g>
+<g data-s="2"><path class="cv b2" d="M110 40L290 190"/><text class="k" x="294" y="192">DD1</text><path class="ar" d="M100 70H140"/></g>
+<g data-s="3"><path class="cv b4" d="M110 190L290 40"/><text class="k" x="294" y="40">SS1</text><path class="ar" d="M88 170H128"/></g>
+<g data-s="4"><path class="dl" d="M150 115H200V200"/><circle cx="200" cy="115" r="3.5"/><text class="k" x="200" y="105" text-anchor="middle">F</text><text x="200" y="214" text-anchor="middle">q1</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes, the demand curve <b>DD0</b> and the supply curve <b>SS0</b>. They meet at <b>E</b>: price p0, quantity q0.</li>
+<li>Demand shifts right to <b>DD1</b>.</li>
+<li>Supply also shifts right, by the same amount, to <b>SS1</b>.</li>
+<li>The new equilibrium is <b>F</b>. Quantity rises from q0 to q1, but the price stays at p0. If demand had shifted more, the price would rise. If supply had shifted more, the price would fall.</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C5-02"><summary><span class="qt">What is price ceiling? Explain with a diagram.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> ceiling = the <b>top</b> of a room, so it is a <b>maximum</b> price. It is set <b>below</b> the equilibrium price, which causes a <b>shortage</b> (excess demand). That leads to rationing, queues and black markets.</p>
+<h4>Exam answer</h4>
+<p>A <b>price ceiling</b> is the upper limit (maximum price) fixed by the government on the price of a good or service. It is fixed <b>below</b> the market equilibrium price, because at the market price some poor people cannot afford these goods. It is generally imposed on essential goods like wheat, rice, kerosene and sugar. Example: the Public Distribution System (ration shops).</p>
+<ul><li>At the ceiling price Pc, consumers want to buy qc, but firms supply only q'c. So there is an <b>excess demand (shortage)</b> of q'c qc.</li>
+<li>The limited supply is shared out through <b>rationing</b>: ration coupons are issued, and the good is sold through ration shops (fair price shops).</li>
+<li><b>Bad effects:</b> (a) consumers have to stand in long queues at ration shops; (b) people who do not get enough are willing to pay more, which can create a <b>black market</b>.</li></ul>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 310 225" role="img" aria-label="Price ceiling creating excess demand">
+<g data-s="1"><path class="ax" d="M40 10V200H300"/><path class="cv b1" d="M60 40L280 190"/><path class="cv b3" d="M60 190L280 40"/><text class="k" x="284" y="194">DD</text><text class="k" x="284" y="44">SS</text><text x="4" y="12">Price</text><text x="300" y="222" text-anchor="end">Quantity</text></g>
+<g data-s="2"><path class="dl" d="M40 115H170V200"/><circle cx="170" cy="115" r="3.5"/><text class="k" x="176" y="111">E</text><text x="34" y="119" text-anchor="end">p*</text><text x="170" y="214" text-anchor="middle">q*</text></g>
+<g data-s="3"><path class="cv b2" d="M40 150H221.3"/><text x="34" y="154" text-anchor="end">Pc</text><text class="k" x="44" y="146" font-size="10">Price ceiling</text></g>
+<g data-s="4"><path class="dl" d="M118.7 150V200M221.3 150V200"/><path class="gp" d="M118.7 150H221.3"/><text x="118.7" y="214" text-anchor="middle">q'c</text><text x="221.3" y="214" text-anchor="middle">qc</text><text class="k" x="170" y="172" text-anchor="middle" font-size="11">Excess demand</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes, the demand curve <b>DD</b> (sloping down) and the supply curve <b>SS</b> (sloping up).</li>
+<li>They meet at <b>E</b>. The equilibrium price is p* and the equilibrium quantity is q*.</li>
+<li>The government fixes a <b>price ceiling Pc below p*</b>. Draw it as a flat line.</li>
+<li>At Pc, read down from SS: firms supply only <b>q'c</b>. Read down from DD: consumers want <b>qc</b>. The gap q'c qc is the <b>excess demand</b> (shortage).</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C5-03"><summary><span class="qt">What is price floor? Explain with a diagram.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> floor = the <b>bottom</b> of a room, so it is a <b>minimum</b> price. It is set <b>above</b> the equilibrium price, which causes a <b>surplus</b> (excess supply). Examples: MSP for farmers, minimum wages.</p>
+<h4>Exam answer</h4>
+<p>A <b>price floor</b> is the lower limit (minimum price) fixed by the government on the price of a good or service. It is fixed <b>above</b> the market equilibrium price, because for some goods a very low price is not desirable.</p>
+<ul><li><b>Examples:</b> (a) agricultural price support, such as the Minimum Support Price (MSP) for farmers; (b) minimum wage legislation (the Minimum Wages Act), which keeps the wage rate above the equilibrium wage.</li>
+<li>At the floor price pf, consumers buy only qf, but firms want to sell q'f. So there is an <b>excess supply (surplus)</b> of qf q'f.</li>
+<li>Under agricultural price support, the government must <b>buy the surplus</b> at the fixed price, to stop the price from falling.</li></ul>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 310 225" role="img" aria-label="Price floor creating excess supply">
+<g data-s="1"><path class="ax" d="M40 10V200H300"/><path class="cv b1" d="M60 40L280 190"/><path class="cv b3" d="M60 190L280 40"/><text class="k" x="284" y="194">DD</text><text class="k" x="284" y="44">SS</text><text x="4" y="12">Price</text><text x="300" y="222" text-anchor="end">Quantity</text></g>
+<g data-s="2"><path class="dl" d="M40 115H170V200"/><circle cx="170" cy="115" r="3.5"/><text class="k" x="176" y="124">E</text><text x="34" y="119" text-anchor="end">p*</text><text x="170" y="214" text-anchor="middle">q*</text></g>
+<g data-s="3"><path class="cv b2" d="M40 80H221.3"/><text x="34" y="84" text-anchor="end">pf</text><text class="k" x="44" y="93" font-size="10">Price floor</text></g>
+<g data-s="4"><path class="dl" d="M118.7 80V200M221.3 80V200"/><path class="gp" d="M118.7 80H221.3"/><text x="118.7" y="214" text-anchor="middle">qf</text><text x="221.3" y="214" text-anchor="middle">q'f</text><text class="k" x="170" y="72" text-anchor="middle" font-size="11">Excess supply</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes, the demand curve <b>DD</b> and the supply curve <b>SS</b>.</li>
+<li>They meet at <b>E</b>. The equilibrium price is p* and the equilibrium quantity is q*.</li>
+<li>The government fixes a <b>price floor pf above p*</b>. Draw it as a flat line.</li>
+<li>At pf, read down from DD: consumers buy only <b>qf</b>. Read down from SS: firms want to sell <b>q'f</b>. The gap qf q'f is the <b>excess supply</b> (surplus).</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C5-04"><summary><span class="qt">Consider the market for cotton, the demand curve for the cotton is q = 430 − p. Assume that market consists of identical firms in which supply of single firm is q = 20 + p at the price 30. Calculate the equilibrium number of firms.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> with free entry and exit, price = minimum AC (the lowest price at which a firm supplies). Then: number of firms = market quantity ÷ one firm's output.</p>
+<h4>Exam answer</h4>
+<p>With free entry and exit, firms enter when there is super-normal profit and leave when there is a loss. So in equilibrium, every firm earns only normal profit, and the price equals the minimum average cost of the firms. Here that price is <b>Rs 30</b>.</p>
+<div class="prac"><p class="hint">Work out each blue box, then tap it to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Step</th><th>Working</th><th>Answer</th></tr>
+<tr><td>Equilibrium price p<sub>0</sub></td><td>= minimum AC</td><td class="h">30</td></tr>
+<tr><td>Market quantity q<sub>0</sub></td><td>430 − 30</td><td class="h">400</td></tr>
+<tr><td>One firm's output q<sub>0f</sub></td><td>20 + 30</td><td class="h">50</td></tr>
+<tr><td>Number of firms n<sub>0</sub></td><td>q<sub>0</sub> ÷ q<sub>0f</sub> = 400 ÷ 50</td><td class="h">8</td></tr></table></div></div>
+<p><b>Answer:</b> the equilibrium number of firms is <b>8</b>.</p>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 310 225" role="img" aria-label="Equilibrium with free entry and exit">
+<g data-s="1"><path class="ax" d="M40 10V200H300"/><text x="4" y="12">Price</text><text x="300" y="222" text-anchor="end">Quantity</text><text x="30" y="214">O</text></g>
+<g data-s="2"><path class="cv b1" d="M60 30L280 190"/><text class="k" x="282" y="186">DD</text></g>
+<g data-s="3"><path class="cv b2" d="M40 120H290"/><text x="34" y="124" text-anchor="end">30</text><text class="k" x="44" y="114" font-size="11">p = min AC</text></g>
+<g data-s="4"><path class="dl" d="M183.75 120V200"/><circle cx="183.75" cy="120" r="3.5"/><text class="k" x="190" y="112">E</text><text x="183.75" y="214" text-anchor="middle">q0 = 400</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes: price going up, quantity going across.</li>
+<li>Draw the market demand curve <b>DD</b> (q = 430 − p).</li>
+<li>With free entry and exit, the price settles at <b>minimum AC = Rs 30</b>. Draw this as a flat line.</li>
+<li>DD meets the price line at <b>E</b>, so the market buys q0 = 430 − 30 = 400. Each firm supplies 20 + 30 = 50, so 400 ÷ 50 = <b>8 firms</b>.</li>
+</ol></figure>
+</div></details>
+</section>
+
+<!-- ============ CH 2 ============ -->
+<section id="c2">
+<h2>Micro Ch 2 · Theory of Consumer Behaviour</h2>
+
+<details class="q p2" id="T2-C2-01"><summary><span class="qt">Write the differences between substitute goods and complementary goods.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> substitutes are used <b>instead of</b> each other (tea <b>or</b> coffee). Complements are used <b>together</b> (car <b>and</b> petrol).</p>
+<h4>Exam answer</h4>
+<div class="tw"><table><tr><th>Substitute goods</th><th>Complementary goods</th></tr>
+<tr><td>Goods used in place of each other to satisfy a want</td><td>Goods used together to satisfy a want</td></tr>
+<tr><td>Examples: jaggery and sugar, tea and coffee</td><td>Examples: car and petrol, tea and sugar, pen and ink</td></tr>
+<tr><td>If the price of one rises, demand for the other <b>rises</b> (positive relationship)</td><td>If the price of one rises, demand for the other <b>falls</b> (negative relationship)</td></tr>
+<tr><td>Rival demand</td><td>Joint demand</td></tr>
+<tr><td>Price of the substitute rises → demand curve shifts right</td><td>Price of the complement rises → demand curve shifts left</td></tr></table></div>
+<ul><li><b>Substitutes:</b> if the price of coffee rises, people switch to tea, so the demand for tea rises.</li>
+<li><b>Complements:</b> if the price of sugar rises, people drink less tea, so the demand for tea falls.</li></ul>
+<h4>Test yourself</h4>
+<div class="prac"><p class="hint">Say the answer, then tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Tea and coffee</td><td class="h">Substitutes</td></tr>
+<tr><td>Pen and ink</td><td class="h">Complements</td></tr>
+<tr><td>Shoes and socks</td><td class="h">Complements</td></tr>
+<tr><td>Jaggery and sugar</td><td class="h">Substitutes</td></tr>
+<tr><td>Price of coffee rises. Demand for tea?</td><td class="h">Rises</td></tr>
+<tr><td>Price of sugar rises. Demand for tea?</td><td class="h">Falls</td></tr></table></div></div>
+</div></details>
+
+<details class="q p3" id="T2-C2-02"><summary><span class="qt">Suppose an individual buys 25 apples at the price Rs. 10 per apple, and if the price increases to Rs. 15 per apple, she reduces her demand to 18 apples. Find out the price elasticity of demand.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> e<sub>D</sub> = % change in quantity demanded ÷ % change in price. Work from the <b>old</b> values. The answer comes out negative, because price and demand move in opposite directions.</p>
+<h4>Exam answer</h4>
+<p><b>Given:</b> old price P1 = Rs 10, new price P2 = Rs 15. Old quantity Q1 = 25, new quantity Q2 = 18.</p>
+<p><b>Formula:</b> e<sub>D</sub> = Percentage change in quantity demanded ÷ Percentage change in price</p>
+<div class="prac"><p class="hint">Work out each blue box, then tap it to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Step</th><th>Working</th><th>Answer</th></tr>
+<tr><td>% change in quantity</td><td>((18 − 25) ÷ 25) × 100</td><td class="h">−28</td></tr>
+<tr><td>% change in price</td><td>((15 − 10) ÷ 10) × 100</td><td class="h">50</td></tr>
+<tr><td>e<sub>D</sub></td><td>−28 ÷ 50</td><td class="h">−0.56</td></tr></table></div></div>
+<p><b>Short method:</b> e<sub>D</sub> = (ΔQ ÷ ΔP) × (P ÷ Q) = (−7 ÷ 5) × (10 ÷ 25) = −70 ÷ 125 = <b>−0.56</b></p>
+<p><b>Meaning:</b> |e<sub>D</sub>| = 0.56 is less than 1, so demand is <b>inelastic</b>. A 50% rise in price reduced demand by only 28%.</p>
+<p class="tip">|e<sub>D</sub>| &gt; 1: elastic. |e<sub>D</sub>| = 1: unitary elastic. |e<sub>D</sub>| &lt; 1: inelastic.</p>
+</div></details>
+
+<details class="q p3" id="T2-C2-03"><summary><span class="qt">List out the differences between Normal goods and Inferior goods with example.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> normal good: income ↑, demand ↑ (same direction). Inferior good: income ↑, demand ↓ (opposite direction).</p>
+<h4>Exam answer</h4>
+<div class="tw"><table><tr><th>Normal good</th><th>Inferior good</th></tr>
+<tr><td>Demand rises when the consumer's income rises</td><td>Demand falls when the consumer's income rises</td></tr>
+<tr><td>Positive relationship between income and demand</td><td>Negative relationship between income and demand</td></tr>
+<tr><td>Income rises → demand curve shifts <b>right</b>. Income falls → shifts left.</td><td>Income rises → demand curve shifts <b>left</b>. Income falls → shifts right.</td></tr>
+<tr><td>Examples: vegetables, fruits, clothes</td><td>Examples: low quality cereals like sajje and navane (coarse cereals), unbranded goods</td></tr></table></div>
+<p class="tip">The same good can be normal at low incomes and inferior at high incomes. A very poor consumer buys more coarse cereals as her income rises. Beyond a point, she switches to better quality cereals and buys fewer coarse ones.</p>
+</div></details>
+
+<details class="q p3" id="T2-C2-04"><summary><span class="qt">Present the derivation of the slope of the Budget line.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> take two points on the budget line, subtract the two equations, and rearrange. Slope = <b>−p1/p2</b>. It is negative because more bananas means fewer mangoes.</p>
+<h4>Exam answer</h4>
+<p>The slope of the budget line is the change in mangoes (x2) needed for each unit change in bananas (x1) along the budget line. Take any two points on the budget line: (x1, x2) and (x1 + Δx1, x2 + Δx2). Both cost exactly the income M.</p>
+<ol><li>First point: <b>p1x1 + p2x2 = M</b> …… (2.4)</li>
+<li>Second point: <b>p1(x1 + Δx1) + p2(x2 + Δx2) = M</b> …… (2.5)</li>
+<li>Subtract (2.4) from (2.5): <b>p1Δx1 + p2Δx2 = 0</b> …… (2.6)</li>
+<li>Rearrange: p2Δx2 = −p1Δx1, so <b>Δx2 ÷ Δx1 = −p1 ÷ p2</b> …… (2.7)</li></ol>
+<p><b>Meaning:</b> to buy one more banana, the consumer must give up p1/p2 mangoes. The absolute slope p1/p2 is the rate at which the market lets her swap bananas for mangoes when she spends all her income.</p>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 300 225" role="img" aria-label="Slope of the budget line">
+<g data-s="1"><path class="ax" d="M40 10V200H290"/><text x="4" y="12">Mangoes</text><text x="290" y="218" text-anchor="end">Bananas</text><text x="30" y="214">O</text></g>
+<g data-s="2"><path class="cv b1" d="M40 40L270 200"/><text class="k" x="214" y="140">Budget line</text></g>
+<g data-s="3"><circle cx="100" cy="81.7" r="3.5"/><text class="k" x="106" y="76">(x1, x2)</text></g>
+<g data-s="4"><circle cx="170" cy="130.4" r="3.5"/><text class="k" x="160" y="122">(x1+Δx1, x2+Δx2)</text></g>
+<g data-s="5"><path class="cv b2" d="M100 81.7V130.4H170"/><text class="k" x="94" y="110" text-anchor="end">Δx2</text><text class="k" x="135" y="146" text-anchor="middle">Δx1</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes: mangoes going up, bananas going across.</li>
+<li>Draw the <b>budget line</b> p1x1 + p2x2 = M. Every bundle on it costs exactly M.</li>
+<li>Mark the first point <b>(x1, x2)</b>. It is on the line, so p1x1 + p2x2 = M (2.4).</li>
+<li>Mark the second point <b>(x1+Δx1, x2+Δx2)</b>. It is also on the line, so p1(x1+Δx1) + p2(x2+Δx2) = M (2.5).</li>
+<li>Draw the step between them: <b>Δx1</b> more bananas and <b>Δx2</b> fewer mangoes. Subtracting gives p1Δx1 + p2Δx2 = 0, so Δx2/Δx1 = <b>−p1/p2</b>.</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C2-05"><summary><span class="qt">Explain the Indifference Map with a diagram.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> indifference map = a <b>family</b> of indifference curves. The higher the curve, the happier the consumer. Its four features: slopes down, bends in towards O (convex), higher is better, never cross.</p>
+<h4>Exam answer</h4>
+<ul><li>An <b>indifference curve</b> joins all bundles of two goods that give the consumer the same satisfaction, so she is indifferent among them.</li>
+<li>A consumer's preferences over all bundles can be shown by a <b>family (group) of indifference curves</b>. This is called her <b>indifference map</b>.</li>
+<li>Preferences are <b>monotonic</b> (she prefers more to less). So bundles on a higher curve are preferred to bundles on a lower curve: IC4 is better than IC3, IC3 better than IC2, and IC2 better than IC1. The arrow in the diagram shows this.</li></ul>
+<p><b>Features of indifference curves:</b></p>
+<ol><li><b>Slope downward from left to right:</b> to get more bananas while staying equally happy, she must give up some mangoes.</li>
+<li><b>Convex to the origin:</b> because of the law of diminishing marginal rate of substitution (MRS). She gives up fewer and fewer mangoes for each extra banana.</li>
+<li><b>A higher curve gives a higher level of satisfaction.</b></li>
+<li><b>Two indifference curves never intersect each other.</b></li></ol>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 330 225" role="img" aria-label="Indifference map">
+<g data-s="1"><path class="ax" d="M40 10V200H320"/><text x="4" y="12">Mangoes</text><text x="320" y="218" text-anchor="end">Bananas</text><text x="30" y="214">O</text></g>
+<g data-s="2"><polyline class="cv b3" points="55,33 60,75 70,116.7 90,150 120,168.8 170,180.8 240,187.5 300,190.4"/><text class="k" x="304" y="196">IC1</text></g>
+<g data-s="3"><polyline class="cv b1" points="70,33 80,75 90,100 110,128.6 140,150 180,164.3 230,173.7 300,180.8"/><polyline class="cv b4" points="95,45.5 110,78.6 130,105.6 160,129.2 200,146.9 250,159.5 300,167.3"/><text class="k" x="304" y="184">IC2</text><text class="k" x="304" y="170">IC3</text></g>
+<g data-s="4"><polyline class="cv b2" points="120,37.5 140,70 165,96 200,118.8 240,135 300,150"/><text class="k" x="304" y="153">IC4</text><path class="ar" d="M60 185L215 60"/><text x="220" y="58" font-size="10">more preferred</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes: mangoes going up, bananas going across.</li>
+<li>Draw one indifference curve, <b>IC1</b>. It slopes down and bends in towards O. Every bundle on it gives the same satisfaction.</li>
+<li>Draw <b>IC2</b> and <b>IC3</b> above it, without letting any two curves touch or cross.</li>
+<li>Draw <b>IC4</b> and an arrow pointing outward. Higher curves are more preferred. This family of curves is the <b>indifference map</b>.</li>
+</ol></figure>
+</div></details>
+
+<details class="q p3" id="T2-C2-06"><summary><span class="qt">List out the differences between Total Utility and Marginal Utility.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> TU = total satisfaction so far. MU = the extra satisfaction from the last unit. When MU = 0, TU is at its highest. When MU is negative, TU falls.</p>
+<h4>Exam answer</h4>
+<div class="tw"><table><tr><th>Total Utility (TU)</th><th>Marginal Utility (MU)</th></tr>
+<tr><td>The total satisfaction from consuming a given amount of a good</td><td>The extra satisfaction from consuming one more unit of the good</td></tr>
+<tr><td>TU<sub>n</sub> = MU<sub>1</sub> + MU<sub>2</sub> + … + MU<sub>n</sub> (the sum of all MUs)</td><td>MU<sub>n</sub> = TU<sub>n</sub> − TU<sub>n−1</sub></td></tr>
+<tr><td>Rises, but more and more slowly, while MU is positive</td><td>Keeps falling as more is consumed (law of diminishing marginal utility)</td></tr>
+<tr><td>Is at its highest (constant) when MU is zero</td><td>Becomes zero when TU is constant</td></tr>
+<tr><td>Starts falling after reaching its highest point</td><td>Becomes negative when TU starts falling</td></tr></table></div>
+<h4>Practice table</h4>
+<div class="prac"><p class="hint">MU is given. Work out TU by adding up all the MUs so far, then tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Units</th><th>MU</th><th>TU</th></tr>
+<tr><td>1</td><td>12</td><td class="h">12</td></tr>
+<tr><td>2</td><td>6</td><td class="h">18</td></tr>
+<tr><td>3</td><td>4</td><td class="h">22</td></tr>
+<tr><td>4</td><td>2</td><td class="h">24</td></tr>
+<tr><td>5</td><td>0</td><td class="h">24</td></tr>
+<tr><td>6</td><td>−2</td><td class="h">22</td></tr></table></div></div>
+<p class="tip">At the 5th unit, MU = 0 and TU stays at its highest (24). At the 6th unit, MU is negative, so TU falls to 22. The TU and MU diagram is in Tier 1 (Law of Diminishing Marginal Utility).</p>
+</div></details>
+</section>
+
+<!-- ============ MICRO CH 1 ============ -->
+<section id="c1">
+<h2>Micro Ch 1 · Introduction</h2>
+
+<details class="q p1" id="T2-C1-01"><summary><span class="qt">What are the three central problems of an economy? Explain.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> <b>What</b> to produce? <b>How</b> to produce? <b>For whom</b> to produce? They all come from scarcity: resources are limited, so every society must choose.</p>
+<h4>Exam answer</h4>
+<p>Production, exchange and consumption are the basic economic activities. Every society faces <b>scarcity</b> of resources, and scarcity creates the problem of <b>choice</b>. Because scarce resources have competing uses, every society must decide how to use them. These decisions are the three central problems:</p>
+<p><b>1. What is produced, and in what quantities?</b> How much of each good and service to produce. For example:</p>
+<ul><li>more food, clothing and housing, or more luxury goods?</li>
+<li>more agricultural goods, or more industrial goods and services?</li>
+<li>more resources for education and health, or for the military?</li>
+<li>more consumption goods today, or more investment goods (like machines) that raise production tomorrow?</li></ul>
+<p><b>2. How are these goods produced?</b> How much of which resources to use for each good. For example, more labour or more machines? Which of the available technologies to use?</p>
+<p><b>3. For whom are these goods produced?</b> How the output is shared among people: who gets more and who gets less. For example, should everyone be given a minimum amount of consumption? Should elementary education and basic health services be free for all?</p>
+<p><b>Conclusion:</b> the allocation of scarce resources and the distribution of the final goods and services are the central problems of any economy.</p>
+<h4>Test yourself</h4>
+<div class="prac"><p class="hint">Which central problem is each decision about? Tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Decision</th><th>Problem</th></tr>
+<tr><td>More food or more weapons?</td><td class="h">What to produce</td></tr>
+<tr><td>More labour or more machines?</td><td class="h">How to produce</td></tr>
+<tr><td>Should basic health care be free for everyone?</td><td class="h">For whom to produce</td></tr>
+<tr><td>Which technology should be used?</td><td class="h">How to produce</td></tr>
+<tr><td>Consumption goods or investment goods?</td><td class="h">What to produce</td></tr>
+<tr><td>Who gets more of the output and who gets less?</td><td class="h">For whom to produce</td></tr></table></div></div>
+</div></details>
+
+<details class="q p2" id="T2-C1-02"><summary><span class="qt">Briefly explain the production possibility frontier.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> <b>on</b> the PPF = all resources fully used. <b>Inside</b> = resources idle or wasted. <b>Outside</b> = impossible with today's resources. More of one good always means less of the other (opportunity cost).</p>
+<h4>Exam answer</h4>
+<p>The <b>production possibility frontier (PPF)</b> is the curve showing the combinations of two goods that an economy can produce when its limited resources are fully used, with the given technology. It shows the <b>maximum</b> amount of one good that can be produced for any given amount of the other.</p>
+<ul><li>All the combinations that can be produced from the given resources and technology make up the <b>production possibility set</b>. The PPF is its graph.</li>
+<li>Example: an economy can produce corn and cotton. If it uses all its resources for corn, it gets at most 4 units of corn. If it uses all of them for cotton, it gets at most 10 units of cotton. It can also produce in-between combinations, like 2 corn and 7 cotton.</li>
+<li>A point <b>inside</b> the PPF means some resources are unemployed or used wastefully.</li>
+<li>Using more resources for corn leaves fewer for cotton. The amount of the other good given up to get one more unit of a good is its <b>opportunity cost</b>.</li>
+<li>The economy has to choose one of these possibilities. This choice is itself one of the central problems of an economy.</li></ul>
+<div class="tw"><table><tr><th>Possibility</th><th>Corn</th><th>Cotton</th></tr>
+<tr><td>A</td><td>0</td><td>10</td></tr><tr><td>B</td><td>1</td><td>9</td></tr><tr><td>C</td><td>2</td><td>7</td></tr><tr><td>D</td><td>3</td><td>4</td></tr><tr><td>E</td><td>4</td><td>0</td></tr></table></div>
+<h4>Diagram</h4>
+<figure class="fx"><svg viewBox="0 0 310 225" role="img" aria-label="Production possibility frontier">
+<g data-s="1"><path class="ax" d="M40 10V200H300"/><text x="4" y="12">Cotton</text><text x="300" y="222" text-anchor="end">Corn</text></g>
+<g data-s="2"><path class="dl" d="M40 47H95V200M40 81H150V200M40 132H205V200"/>
+<circle class="f1" cx="40" cy="30" r="3.5"/><circle class="f1" cx="95" cy="47" r="3.5"/><circle class="f1" cx="150" cy="81" r="3.5"/><circle class="f1" cx="205" cy="132" r="3.5"/><circle class="f1" cx="260" cy="200" r="3.5"/>
+<text class="k" x="47" y="26">A</text><text class="k" x="100" y="42">B</text><text class="k" x="155" y="76">C</text><text class="k" x="210" y="127">D</text><text class="k" x="265" y="192">E</text>
+<text x="34" y="34" text-anchor="end">10</text><text x="34" y="51" text-anchor="end">9</text><text x="34" y="85" text-anchor="end">7</text><text x="34" y="136" text-anchor="end">4</text>
+<text x="95" y="214" text-anchor="middle">1</text><text x="150" y="214" text-anchor="middle">2</text><text x="205" y="214" text-anchor="middle">3</text><text x="260" y="214" text-anchor="middle">4</text></g>
+<g data-s="3"><polyline class="cv b1" points="40,30 95,47 150,81 205,132 260,200"/><text class="k" x="186" y="96">PPF</text></g>
+<g data-s="4"><circle class="f2" cx="150" cy="132" r="3.5"/><text class="k" x="156" y="148">F</text></g>
+<g data-s="5"><circle class="f2" cx="205" cy="81" r="3.5"/><text class="k" x="211" y="77">G</text></g>
+</svg>
+<div class="say"></div>
+<div class="ctl"><button data-a="prev">◀ Back</button><button data-a="next">Next step ▶</button><button data-a="all">Show all</button><button data-a="quiz">Test me</button></div>
+<ol class="steps" hidden>
+<li>Draw the axes: cotton going up, corn going across.</li>
+<li>Plot the points from the table: <b>A</b> (0, 10), <b>B</b> (1, 9), <b>C</b> (2, 7), <b>D</b> (3, 4), <b>E</b> (4, 0).</li>
+<li>Join them. This curve is the <b>PPF</b>. Every point on it uses all resources fully.</li>
+<li>Mark <b>F</b> (2 corn, 4 cotton), inside the PPF. Here some resources are idle or wasted.</li>
+<li>Mark <b>G</b> (3 corn, 7 cotton), outside the PPF. It cannot be produced with the present resources and technology.</li>
+</ol></figure>
+<h4>Practice table · opportunity cost</h4>
+<div class="prac"><p class="hint">How much cotton is given up for each extra unit of corn? Tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Move</th><th>Extra corn</th><th>Cotton given up</th></tr>
+<tr><td>A → B</td><td>1</td><td class="h">1 (10 − 9)</td></tr>
+<tr><td>B → C</td><td>1</td><td class="h">2 (9 − 7)</td></tr>
+<tr><td>C → D</td><td>1</td><td class="h">3 (7 − 4)</td></tr>
+<tr><td>D → E</td><td>1</td><td class="h">4 (4 − 0)</td></tr></table></div></div>
+<p class="tip">Each extra unit of corn costs more cotton than the one before. That is why the PPF bows outward (it is concave to the origin).</p>
+</div></details>
+
+<details class="q p3" id="T2-C1-03"><summary><span class="qt">How does the Market economy work? Explain.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> in a market economy, <b>price is the signal</b>. Buyers want more → price rises → producers make more. No government is needed to plan this.</p>
+<h4>Exam answer</h4>
+<p>In a <b>market economy</b>, all economic activities are organised through the market, by buyers and sellers, and not by the government.</p>
+<ol><li><b>Meaning of market:</b> a market is an institution that allows individuals to interact freely. It is a set of arrangements where people can freely exchange their goods, services or products with each other.</li>
+<li><b>Not just a place:</b> buyers and sellers need not meet in one place. They can trade in a village chowk, a city supermarket, or over the telephone or the internet.</li>
+<li><b>Prices:</b> every good and service has a price, agreed between buyers and sellers, at which it is exchanged. The price shows, on average, how much society values that good.</li>
+<li><b>Price signals:</b> if buyers want more of a good, its price rises. This tells producers that society wants more of it, so they produce more. If buyers want less, the price falls and producers make less. In this way, prices carry information to everyone in the market.</li>
+<li><b>Coordination:</b> through these price signals, the activities of millions of separate buyers and sellers are coordinated. This is how the market solves the central problems of what, how much and how to produce.</li></ol>
+<p class="tip">In reality, all economies are <b>mixed economies</b>: the market does most of the work, but the government takes some important decisions. The USA is close to a market economy, with a very small role for the government.</p>
+</div></details>
+
+<details class="q p3" id="T2-C1-04"><summary><span class="qt">Discuss how the Family Farm, Weaver and Teacher can use their resources to fulfill their needs in a simple economy.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> each person has only a few resources. They <b>produce</b> something with them, then <b>exchange</b> it (or the money earned) for everything else they need.</p>
+<h4>Exam answer</h4>
+<p>People in a society need many goods and services, such as food, clothing, housing, transport, and the services of teachers and doctors. No one has everything she needs. Each person has only a few resources. She uses them to produce something, and exchanges part of it for the other things she needs.</p>
+<div class="tw"><table><tr><th>Unit</th><th>Resources it has</th><th>How it meets its needs</th></tr>
+<tr><td>Family farm</td><td>A plot of land, some grains, farming tools, maybe a pair of bullocks, and the labour of family members</td><td>Grows corn. Keeps part of it to eat, and exchanges the rest for clothing, housing and services</td></tr>
+<tr><td>Weaver</td><td>Yarn, cotton and other tools for weaving</td><td>Weaves cloth and exchanges it for the goods and services she wants</td></tr>
+<tr><td>Teacher</td><td>The skills needed to teach students</td><td>Earns money by teaching in the school and uses it to buy what she needs</td></tr>
+<tr><td>Labourer</td><td>Only her own labour</td><td>Earns money by working for someone else and uses it to meet her needs</td></tr></table></div>
+<ul><li><b>Scarcity and choice:</b> no one has unlimited resources compared to their needs. So each person must choose: more of one thing means giving up some of another. For example, a bigger house may mean giving up some farmland. Better education for the children may mean giving up some luxuries.</li>
+<li><b>Society as a whole:</b> what is produced must match what people want. For example, the total corn produced must match the corn people want to eat. If too much is grown, some resources should be moved to producing other goods.</li>
+<li>So even a simple economy faces two basic problems: <b>allocating</b> its limited resources among different goods, and <b>distributing</b> the goods produced among its people.</li></ul>
+</div></details>
+</section>
+
+<!-- ============ MACRO CH 1 ============ -->
+<section id="m1">
+<h2>Macro Ch 1 · Introduction (Macroeconomics)</h2>
+
+<details class="q p1" id="T2-M1-01"><summary><span class="qt">List out the differences between Micro and Macroeconomics.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> micro = one tree (a worm's view). Macro = the whole forest (a bird's view).</p>
+<h4>Exam answer</h4>
+<div class="prac"><p class="hint">Cover the macro side: say each macro point, then tap the blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Microeconomics</th><th>Macroeconomics</th></tr>
+<tr><td>1. Studies individual units (one consumer, one firm, one market)</td><td class="h">1. Studies the economy as a whole (aggregates)</td></tr>
+<tr><td>2. "Micro" means small</td><td class="h">2. "Macro" means large</td></tr>
+<tr><td>3. Deals with demand and supply in individual markets</td><td class="h">3. Deals with total (aggregate) demand and supply of all markets</td></tr>
+<tr><td>4. Partial equilibrium analysis</td><td class="h">4. General equilibrium analysis</td></tr>
+<tr><td>5. Slicing method</td><td class="h">5. Lumping method</td></tr>
+<tr><td>6. Worm's view</td><td class="h">6. Bird's view</td></tr>
+<tr><td>7. Narrow scope</td><td class="h">7. Wider scope</td></tr></table></div></div>
+<ul><li><b>Microeconomics</b> studies how individual consumers and producers behave in the markets for different goods, and how the price and quantity of each good are decided. It assumes the rest of the economy stays the same. Big issues like inflation and unemployment are taken as given.</li>
+<li><b>Macroeconomics</b> studies the economy as a whole, using measures like total output, employment and the general price level. It asks: How is total output decided? How does it grow? Are all resources employed? Why do prices rise? It also studies the links between different sectors.</li>
+<li><b>Decision makers:</b> in micro, individuals try to maximise their own profit or satisfaction. In macro, the State and bodies like RBI and SEBI pursue public goals for the welfare of the whole country.</li></ul>
+</div></details>
+
+<details class="q p2" id="T2-M1-02"><summary><span class="qt">Write about the role of the Government (State) and Household sectors in both developed and developing countries.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> <b>Government:</b> laws, justice, taxes, public services (and sometimes production). <b>Households:</b> consume, work, save, pay taxes, and earn wages, salaries, profit, rent and interest.</p>
+<h4>Exam answer</h4>
+<p><b>Role of the Government (State):</b> in both developed and developing countries, the State exists alongside the private sector. Its roles are:</p>
+<ol><li>Framing laws and enforcing them</li>
+<li>Delivering justice</li>
+<li>Imposing and collecting taxes</li>
+<li>Spending on public infrastructure, and running schools, colleges and health services</li>
+<li>In many cases, undertaking production itself</li></ol>
+<p>These economic functions must be counted when describing a country's economy. For convenience, the State is called the "Government".</p>
+<p><b>Role of Households:</b></p>
+<ol><li>A household is a single person who takes decisions about her own consumption, or a group of people whose consumption decisions are taken jointly.</li>
+<li>Households consume goods. The market where firms sell their products could not work without the demand coming from households.</li>
+<li>Households save and pay taxes.</li>
+<li>Household members work and earn incomes: wages from working in firms, salaries from government jobs, and profits as owners of firms. They can also earn rent by leasing land and interest by lending capital.</li></ol>
+</div></details>
+
+<details class="q p3" id="T2-M1-03"><summary><span class="qt">Explain the working of the economy of a capitalist country.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> the entrepreneur hires land, labour and capital, produces, sells, and earns revenue. Land gets <b>rent</b>, labour gets <b>wages</b>, capital gets <b>interest</b>, and what is left is the entrepreneur's <b>profit</b>.</p>
+<h4>Exam answer</h4>
+<ol><li>In a capitalist country, production is mainly carried out by <b>private capitalist enterprises</b> (firms).</li>
+<li>Each firm is run by one or more <b>entrepreneurs</b>. They take the major decisions and bear most of the risk.</li>
+<li>To produce, the entrepreneur needs <b>capital</b> (her own or borrowed), <b>natural resources</b> (raw materials, which are used up, and land, which is fixed) and <b>labour</b>.</li>
+<li>The output is sold in the market to earn a profit. The money earned is called <b>revenue</b>. It is shared out among the factors of production, as in the table below.</li>
+<li>Profits are often used in the next period to buy new machines or build new factories, so that production can grow. Such spending is called <b>investment expenditure</b>.</li>
+<li>The wage rate is decided by the demand for and supply of labour in the market, and the role of the government is limited.</li></ol>
+<div class="prac"><p class="hint">What does each factor get from the revenue? Tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Factor of production</th><th>Paid as</th></tr>
+<tr><td>Land</td><td class="h">Rent</td></tr>
+<tr><td>Labour</td><td class="h">Wages</td></tr>
+<tr><td>Capital</td><td class="h">Interest</td></tr>
+<tr><td>Entrepreneur</td><td class="h">Profit (what is left)</td></tr></table></div></div>
+<p><b>Features of a capitalist economy:</b></p>
+<ol type="a"><li>The means of production are privately owned.</li>
+<li>Goods are produced to be sold in the market.</li>
+<li>Labour is bought and sold at a price called the wage rate (wage labour).</li></ol>
+<p class="tip">Strictly, only a handful of countries in North America, Europe and Asia are fully capitalist. In many developing countries, much farming is done by peasant families, using their own labour and mostly for their own use.</p>
+</div></details>
+
+<details class="q p3" id="T2-M1-04"><summary><span class="qt">Write about the emergence of Macroeconomics.</span><span class="meta"><b class="mk">4 marks</b></span></summary>
+<div class="ans">
+<p class="tip">💡 <b>Remember:</b> classical economists said "everyone who wants work will find it". Then the <b>Great Depression (1929)</b> proved them wrong, and Keynes explained why in his book of <b>1936</b>. That is how macroeconomics was born.</p>
+<h4>Exam answer</h4>
+<ol><li><b>Birth of the subject:</b> macroeconomics became a separate branch of economics after the British economist <b>John Maynard Keynes</b> published <i>The General Theory of Employment, Interest and Money</i> in <b>1936</b>.</li>
+<li><b>Classical tradition:</b> before Keynes, economists believed that all labourers who are ready to work will find jobs, and all factories will work at full capacity.</li>
+<li><b>The Great Depression of 1929:</b> in 1929 and the years after it, output and employment fell hugely in Europe and North America, and other countries were affected too. Demand for goods was low, many factories lay idle, and workers lost their jobs.</li>
+<li><b>Size of the fall in the USA:</b> from 1929 to 1933, unemployment rose from 3% to 25%, and total output fell by about 33%.</li>
+<li><b>Need for a new theory:</b> these events made economists think about the economy in a new way. They had to explain how unemployment could last for a long time. Keynes's book tried to do this.</li>
+<li><b>Keynes's new approach:</b> unlike earlier economists, he studied the working of the economy as a whole, and how its different sectors depend on each other. With this, macroeconomics was born.</li></ol>
+<h4>Test yourself</h4>
+<div class="prac"><p class="hint">Say the answer, then tap each blue box to check.</p>
+<div class="ctl"><button data-t="show">Show all answers</button><button data-t="hide">Hide all answers</button></div>
+<div class="tw"><table><tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Adam Smith publishes <i>The Wealth of Nations</i></td><td class="h">1776</td></tr>
+<tr><td>The Great Depression begins</td><td class="h">1929</td></tr>
+<tr><td>Keynes publishes <i>The General Theory</i></td><td class="h">1936</td></tr>
+<tr><td>US unemployment rate, 1929 → 1933</td><td class="h">3% → 25%</td></tr>
+<tr><td>Fall in US total output, 1929–1933</td><td class="h">About 33%</td></tr>
+<tr><td>Name of the school of thought before Keynes</td><td class="h">Classical tradition</td></tr></table></div></div>
+<p class="tip">Unemployment rate = people who are not working and are looking for jobs ÷ all people who are working or looking for jobs.</p>
+</div></details>
+</section>
+
+<a class="next" href="3.html">Next: Tier 3 · 1–2 mark questions →</a>
+</main>
+<script>
+function setAll(o){document.querySelectorAll('details.q').forEach(function(d){d.open=o})}
+document.querySelectorAll('figure.fx').forEach(function(f){
+var li=f.querySelectorAll('.steps li'),n=li.length,say=f.querySelector('.say'),s=1,ks=f.querySelectorAll('text.k');
+function show(k){s=Math.max(1,Math.min(n,k));
+f.querySelectorAll('[data-s]').forEach(function(e){e.classList.toggle('off',+e.getAttribute('data-s')>s)});
+say.innerHTML='<b>Step '+s+' of '+n+':</b> '+li[s-1].innerHTML}
+function quiz(on){f.classList.toggle('quiz',on);
+f.querySelector('[data-a=quiz]').textContent=on?'Show labels':'Test me';
+ks.forEach(function(t){if(on&&!t.classList.contains('q')){t.setAttribute('data-o',t.innerHTML);t.innerHTML='?';t.classList.add('q')}else if(!on&&t.classList.contains('q')){t.innerHTML=t.getAttribute('data-o');t.classList.remove('q')}});
+if(on){show(n);say.innerHTML='<b>Test me:</b> say what each <b>?</b> should be, then tap it to check.'}}
+f.querySelector('.ctl').addEventListener('click',function(e){var a=e.target.getAttribute('data-a');
+if(a=='prev')show(s-1);if(a=='next')show(s+1);if(a=='all')show(n);if(a=='quiz')quiz(!f.classList.contains('quiz'))});
+ks.forEach(function(t){t.addEventListener('click',function(){if(t.classList.contains('q')){t.innerHTML=t.getAttribute('data-o');t.classList.remove('q')}});});
+show(1)});
+document.addEventListener('click',function(e){var c=e.target.closest('td.h');if(c){c.classList.toggle('r');return}
+var b=e.target.closest('[data-t]');if(b)b.closest('.prac').querySelectorAll('td.h').forEach(function(d){d.classList.toggle('r',b.getAttribute('data-t')=='show')})});
+</script>
+</body>
+</html>
